@@ -8,4 +8,9 @@ body {
 }
 .container {
   border: 2px solid gray;
+  background: url(../src/image/fifty\ shades.jpg) no-repeat;
+  height: 200vh;
+  width: 200%;
+  object-fit: cover;
+  opacity: 0.1px;
 }
