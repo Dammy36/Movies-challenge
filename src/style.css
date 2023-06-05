@@ -2,15 +2,54 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   background-color: black;
+  font-family: "Roboto", sans-serif;
 }
 .container {
-  border: 2px solid gray;
-  background: url(../src/image/fifty\ shades.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-image: url(../src/image/fifty\ shades.jpg);
   height: 200vh;
-  width: 200%;
-  object-fit: cover;
-  opacity: 0.1px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+li {
+  font-size: 2rem;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+li a {
+  color: red;
+  text-decoration: none;
+  font-weight: 500;
+}
+li a:hover {
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+.navbar-brand {
+  color: red;
+}
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 1280px) {
+  li {
+    font-size: 1.7rem;
+  }
+  .navbar-brand {
+    font-size: 4rem;
+  }
 }
