@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   background-color: black;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 .container {
   background-repeat: no-repeat;
@@ -44,12 +45,100 @@ li a:hover {
   font-size: 5rem;
   font-weight: 900;
 }
+.home-section {
+  display: flex;
+  justify-content: baseline;
+  margin: 5rem;
+  font-weight: 500;
+  margin-top: 20rem;
+  color: white;
+  padding: 20px;
+  word-spacing: 5px;
+  cursor: pointer;
+}
+.Premium {
+  margin-top: 10px;
+}
+.Premium,
+.number {
+  padding: 15px 5px 10px;
+  border: 1 solid;
+  background-color: #b0150f;
+  width: 15rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+.home-section :hover {
+  background-color: black;
+  box-shadow: 5px 10px 30px rgb(85 85 85 /20%);
+  border-radius: 10px;
+}
+.number,
+.fa-star {
+  margin-top: 0;
+  margin: 10px;
+  width: 50px;
+  background-color: #990000;
+}
+.fa-star {
+  font-size: 12px;
+  background-color: #f4e614;
+  color: black;
+  padding: 15px 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.fa-star:hover {
+  color: #fff;
+}
+
+.section {
+  margin: 5rem;
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.section-chapter {
+  line-height: 2;
+}
+.chapter {
+  font-size: 20px;
+  font-weight: 100;
+}
 
 @media (max-width: 1280px) {
+  .section {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
   li {
     font-size: 1.7rem;
   }
   .navbar-brand {
     font-size: 4rem;
+  }
+  .home-section {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .number,
+  .fa-star {
+    margin: 20px;
+    padding: 15px 5px 10px;
   }
 }
