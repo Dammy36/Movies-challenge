@@ -6,8 +6,6 @@ body {
   background-color: black;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-}
-.container {
   background-repeat: no-repeat;
   background-image: url(../src/image/fifty\ shades.jpg);
   height: 200vh;
@@ -47,24 +45,23 @@ li a:hover {
 }
 .home-section {
   display: flex;
-  justify-content: baseline;
+  justify-content: left;
+  align-items: center;
   margin: 5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 20rem;
   color: white;
-  padding: 20px;
+  padding: 15px;
   word-spacing: 5px;
   cursor: pointer;
 }
-.Premium {
-  margin-top: 10px;
-}
+
 .Premium,
 .number {
-  padding: 15px 5px 10px;
   border: 1 solid;
   background-color: #b0150f;
   width: 15rem;
+  padding: 10px;
   letter-spacing: 1px;
   border-radius: 5px;
   text-align: center;
@@ -78,7 +75,6 @@ li a:hover {
 }
 .number,
 .fa-star {
-  margin-top: 0;
   margin: 10px;
   width: 50px;
   background-color: #990000;
@@ -104,6 +100,7 @@ li a:hover {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -116,7 +113,71 @@ h1 {
   font-weight: 100;
 }
 
-@media (max-width: 1280px) {
+.package-section {
+  margin: 5rem;
+  color: white;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.package-section a {
+  text-decoration: none;
+}
+
+.package-section a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.text {
+  color: green;
+  font-weight: 500;
+}
+.icon-link {
+  margin: 2rem;
+}
+
+.icon-link .fa-solid {
+  padding: 0.5rem 2rem;
+  background: black;
+  color: white;
+  display: inline-block;
+  justify-content: center;
+  justify-items: center;
+  font-size: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.icon-link .fa-solid:hover {
+  background: blue;
+  color: #fff;
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.04);
+}
+
+.badge {
+  padding: 1rem 10rem;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: red;
+  text-transform: uppercase;
+  margin-left: 5rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: black;
+  }
   .section {
     text-align: center;
   }
@@ -131,14 +192,31 @@ h1 {
   }
   .home-section {
     margin-top: 5rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 2rem;
     margin: 10px;
   }
   .number,
   .fa-star {
-    margin: 20px;
-    padding: 15px 5px 10px;
+    margin: 15px;
+    padding: 10px 8px;
+  }
+
+  .Premium {
+    padding: 10px 20px;
+  }
+  .package-section {
+    text-align: center;
+    font-size: 20px;
+  }
+  .badge {
+    padding: 1rem 5rem;
+    font-size: 15px;
+    margin-left: 7rem;
+  }
+  .img-fluid {
+    margin-top: 5rem;
   }
 }
