@@ -35,32 +35,30 @@
   </head>
   <body>
     <!--header-->
-    <header>
+    <div class="container-fluid">
       <nav>
-        <ul>
-          <div class="d-md-flex justify-content-between">
-            <!-- As a link -->
-            <nav class="navbar bg-body-dark">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">360</a>
-              </div>
-            </nav>
-
-            <li><a href="#">home</a></li>
-            <li><a href="#">box-office</a></li>
-            <li><a href="#">club</a></li>
-            <li><a href="#">shop</a></li>
-          </div>
+        <ul class="d-flex justify-content-md-between">
+          <li class="active"><a href="#" title="360-Studio">360</a></li>
+          <li class="home-link"><a href="#" title="Home-page">Home</a></li>
+          <li class="home-link">
+            <a href="#" title="Box-office">Box office</a>
+          </li>
+          <li class="home-link">
+            <a href="#" title="Club-house" class="d-none d-md-block"
+              >Coming Soon</a
+            >
+          </li>
+          <li class="home-link"><a href="#" title="Shop">Downloads</a></li>
         </ul>
       </nav>
-    </header>
-    <!--Home section-->
-    <div class="container">
+
+      <!--Home section-->
+
       <div class="row">
-        <div class="col-md">
+        <div class="col-sm">
           <section>
             <div>
-              <h3 class="home-section">
+              <h3 class="home-section d-flex justify-content-md-between">
                 <div class="Premium">Premium</div>
                 <div class="number">13+</div>
                 <i class="fa-sharp fa-solid fa-star">8.8</i>
@@ -100,24 +98,85 @@
               <i class="fa-solid fa-thumbs-down"></i>
               <i class="fa-solid fa-arrow-down"></i>
               <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-bell"></i>
             </p>
           </section>
           <!--badge--->
           <h4 class="badge"><i class="fa-solid fa-play"></i>watch now</h4>
         </div>
-        <div class="col-md">
-          <img src="src/image/images (5).jpg" class="img-fluid" alt="" />
+        <div class="col-sm rounded shadow image">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/440/original/images_%285%29.jpg?1686656265"
+            class="img-fluid"
+            alt=" Black widow movie"
+          />
         </div>
       </div>
     </div>
     <!--main--->
-    <div class="main-section">
-      <img src="src/image/GOT.jpg " style="width: 200px" alt="" />
-      <img src="src/image/greys.jpg" alt="" />
-      <img src="src/image/ironman.jpg" style="width: 200px" alt="" />
+    <div class="main m-5">
+      <h3 class="main-section text-center">Top trending videos</h3>
+      <div class="row mt-5">
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/431/original/ironman.jpg?1686656075"
+            style="width: 200px"
+            class="img-fluid cardimg"
+            alt="ironman movie"
+          />
+        </div>
 
-      <img src="src/image/mermaid.jpg" style="width: 200px" alt="" />
-      <img src="src/image/vikings.jpg" style="width: 200px" alt="" />
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/437/original/greys.jpg?1686656203"
+            class="img-fluid cardimg"
+            alt=" Grey's Anatomy movie"
+          />
+        </div>
+
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/436/original/fifty_shades.jpg?1686656186"
+            style="width: 200px"
+            class="img-fluid cardimg"
+            alt="fifty_shades movie"
+          />
+        </div>
+
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/434/original/GOT.jpg?1686656135"
+            style="width: 200px"
+            class="img-fluid cardimg"
+            alt="Game of throne movie"
+          />
+        </div>
+
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/433/original/vikings.jpg?1686656102"
+            style="width: 200px"
+            class="img-fluid cardimg"
+            alt="vikings movie"
+          />
+        </div>
+
+        <div class="col-sm-2 p-3 rounded shadow">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/439/original/lion_king.jpg?1686656235 "
+            style="width: 300px"
+            class="img-fluid cardimg"
+            alt="lion_king movie"
+          />
+        </div>
+      </div>
     </div>
   </body>
 </html>
